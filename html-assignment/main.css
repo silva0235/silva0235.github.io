@@ -22,3 +22,20 @@ section > ul {
 section li:nth-child(odd) {
     background-color: lightcyan;
 }
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: mediumpurple;
+    border: 2px solid blueviolet;
+    padding: 0.5px 1px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: lavender;
+}
