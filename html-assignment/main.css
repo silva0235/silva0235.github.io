@@ -4,5 +4,10 @@ body {
 }
 
 header, footer {
-    background-color: #33dfe6;
+    background-color: #5bdadf;
 }
+
+.site-title {
+    color: #9210a1;
+}
+
