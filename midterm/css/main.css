@@ -1,0 +1,142 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#aad4cf;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.wrapper {
+    background-color:#c9e8e8;
+    width: 900px;
+    margin: 0 auto;  /* center block element*/
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+#header-img {
+    width: 100%;
+    display: block;
+}
+
+.site-title {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+    color: white;
+}
+
+/* navigation styles */
+nav {
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+nav li {
+    display: inline;
+    padding: 0 50px;
+    border-right: 1px solid black;
+    font-size: 18px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* article styles */
+article {
+    padding: 20px;
+}
+
+.article-img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* facts section */
+.facts {
+    padding: 20px;
+}
+
+.facts ul {
+    list-style-type:disc;
+    padding-left: 20px;
+}
+
+/* contact form styles */
+.contact-form {
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Box only around form */
+.form-box {
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+/* Radio buttons inline */
+.radio-group {
+    display: flex;   /* Makes the children inline horizontally */
+    gap: 20px;       /* Space between each radio button */
+    margin-top: 5px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input [type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+legend {
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    width: 80px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+footer {
+    text-align: right;
+    padding:10px;
+    font-size: 14px;
+}
