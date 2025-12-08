@@ -38,13 +38,19 @@ body {
   text-decoration: none;
   padding: 0 16px; /* horizontal padding, remove padding-top hack */
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 2px;
 }
 .img-bg-centered {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
+
+/* line divider for member card */
+.divider {
+    margin-bottom: 10px;
+    border: 1px solid #895129;
+  }
 
 /* Header and navigation */
 nav a {
@@ -78,9 +84,9 @@ nav ul {
   padding-top: 45px;
 }
 .banner-content {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 30px 10px 5px 10px;
+    padding: 30px 10px 8px 10px;
 }
 .banner-content h1 {
   font-size: 48px;
@@ -103,6 +109,9 @@ nav ul {
 .about-img {
   background-image: url("../images/about-us.jpg");
   height: 320px;
+}
+#about h2 {
+  margin-left: 0;
 }
 .card {
   background-color: #ffe6ac;
@@ -165,6 +174,7 @@ nav ul {
   border-left: 1px solid #cacaca;
   background-color: #ffe6ac;
   padding: 5px;
+  font-weight: normal;
 }
 .contact-grid {
   padding: 10px;
@@ -310,8 +320,8 @@ footer a {
      First member image on the left (default), second member image on the right. */
   #team .section-wrapper .team-member {
     display: flex;
-    gap: 20px;
-    align-items: center;
+    gap: 5px;
+    align-items: normal;
   }
   
   #team .section-wrapper .team-member img {
