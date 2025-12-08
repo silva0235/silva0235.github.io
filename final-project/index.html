@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final-project</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- header -->
     <header>
-        <div class="wrapper">
+        <div class="wrapper section-wrapper">
             <div class="logo">
                 <img src="images/logo.png" alt="Three Star Media logo">
             </div>
@@ -26,7 +31,7 @@
                 </ul>
             </nav>
             <form class="search-form">
-                <label for="search">Search</label>
+                <!-- <label for="search">Search</label> -->
                 <input 
                     type="text" 
                     id="search" 
@@ -41,202 +46,232 @@
     <!-- banner -->
     <main>
         <section id="home" class="banner">
-            <div id="background-img-wrapper">
+            <div class="background-img-wrapper img-bg-centered">
                 <!--The background image will be inserted in this container as a background with css -->
-                <div class="banner-content">
+                <div class="banner-content section-wrapper">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur alias eligendi ad
                         praesentium? Inventore tempora molestias sit ullam, necessitatibus voluptatem nesciunt eligendi,
                         magnam iure accusamus quo quae quod ipsa?</p>
-                    <a href="#contact" class="button">Connect with us</a>
+                    <a href="#contact" class="button">
+                        Connect with us
+                        <span class="material-symbols-outlined">arrow_right</span>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- about us -->
         <section id="about" class="about">
-            <div class="about-img">
-                <img src="images/about-us.jpg" alt="Office">
-            </div>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit fugiat tempore
-                    laudantium
-                    ducimus rerum minus, nisi debitis a, voluptatibus iure impedit autem, ad natus illum nobis? Animi,
-                    placeat
-                    odio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos sint nostrum, et commodi fugit
-                    consequuntur delectus possimus culpa beatae provident, in, distinctio amet aperiam repellat deserunt
-                    deleniti quod cupiditate.</p>
+            <div class="section-wrapper">
+                <div class="about-img img-bg-centered">
+                    <!-- about us image as a background -->
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit fugiat tempore
+                        laudantium
+                        ducimus rerum minus, nisi debitis a, voluptatibus iure impedit autem, ad natus illum nobis? Animi,
+                        placeat
+                        odio.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos sint nostrum, et commodi fugit
+                        consequuntur delectus possimus culpa beatae provident, in, distinctio amet aperiam repellat deserunt
+                        deleniti quod cupiditate.</p>
+                </div>
             </div>
         </section>
         <!-- services -->
         <section id="services" class="services">
-            <h2>Our services</h2>
-            <!-- digital transformation -->
-            <div id="digital-transformation-card" class="service-card">
-                <img src="images/digital.jpg" alt="Digital transformation">
-                <div class="service-info">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem maxime esse eaque praesentium
-                        aliquid,
-                        omnis voluptas placeat. Sequi, ipsam alias enim ipsa, rem voluptates dolorum in sint quo
-                        perspiciatis
-                        eaque!</p>
-                    <a href="#" class="button">Digital plans</a>
-                </div>
-            </div>
-            <!-- marketing -->
-            <div id="marketing-card" class="service-card">
-                <img src="images/marketing.jpg" alt="Marketing">
-                <div class="service-info">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus perferendis
-                        consequuntur
-                        necessitatibus illo impedit adipisci consectetur? Ex libero dolorem quisquam earum minus
-                        excepturi
-                        mollitia, facere beatae aut possimus placeat!</p>
-                    <a href="#" class="button">
-                        Marketing Plans
-                        <span class="material-symbols-outlined">play_arrow</span>
-                    </a>
-                </div>
-            </div>
-            <!-- video production -->
-            <div id="video-production-card" class="service-card">
-                <img src="images/video.jpg" alt="Video production">
-                <div class="service-info">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
-                        molestiae
-                        libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
-                        autem
-                        praesentium quas adipisci.</p>
-                    <a href="#" class="button">
-                        Video Plans
-                        <span class="material-symbols-outlined">play_arrow</span>
-                    </a>
-                </div>
-            </div>
-            <!-- web development -->
-            <div id="web-development-card" class="service-card">
-                <img src="images/web.jpg" alt="Web development">
-                <div class="service-info">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deleniti architecto minima, ad
-                        sapiente
-                        cupiditate illum quas tenetur perferendis voluptates magni alias similique quaerat aut, eius
-                        quod?
-                        Nihil, nulla totam.</p>
-                    <a href="#" class="button">
-                        Web Plans
-                        <span class="material-symbols-outlined">play_arrow</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Print -->
-            <div id="print-card" class="service-card">
-                <img src="images/print.jpg" alt="Print services">
-                <div class="service-info">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, similique mollitia. Placeat
-                        cumque
-                        architecto assumenda, perferendis magni esse rerum deserunt accusantium sed reiciendis numquam
-                        delectus
-                        fugiat animi fuga laborum vitae?</p>
-                    <a href="#" class="button">
-                        Print Plans
-                        <span class="material-symbols-outlined">play_arrow</span>
-                    </a>
+            <div class="section-wrapper">
+                <h2>Our services</h2>
+                <!-- digital transformation -->
+                 <div class="section-grid">
+                    <div id="digital-transformation-card" class="card">
+                        <img src="images/digital.jpg" alt="Digital transformation">
+                        <div class="info">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus perferendis consequuntur necessitatibus illo impedit adipisci consectetur? Ex libero dolorem quisquam earum minus excepturi mollitia, facere beatae aut possimus placeat!</p>
+                            <a href="#" class="button">
+                                Digital plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- marketing -->
+                    <div id="marketing-card" class="card">
+                        <img src="images/marketing.jpg" alt="Marketing">
+                        <div class="info">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus perferendis
+                                consequuntur
+                                necessitatibus illo impedit adipisci consectetur? Ex libero dolorem quisquam earum minus
+                                excepturi
+                                mollitia, facere beatae aut possimus placeat!</p>
+                            <a href="#" class="button">
+                                Marketing Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- video production -->
+                    <div id="video-production-card" class="card">
+                        <img src="images/video.jpg" alt="Video production">
+                        <div class="info">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <a href="#" class="button">
+                                Video Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- web development -->
+                    <div id="web-development-card" class="card">
+                        <img src="images/web.jpg" alt="Web development">
+                        <div class="info">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <a href="#" class="button">
+                                Web Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Print -->
+                    <div id="print-card" class="card">
+                        <img src="images/print.jpg" alt="Print services">
+                        <div class="info">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, neque dolor! Sapiente culpa
+                                molestiae
+                                libero vero incidunt temporibus pariatur quasi fugit rerum! Iste, delectus dolorum cupiditate
+                                autem
+                                praesentium quas adipisci.</p>
+                            <a href="#" class="button">
+                                Print Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- vision section -->
-        <section class="vision">
-            <h2>Our Vision</h2>
-            <img src="images/vision.jpg" alt="vision" class="vision-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat nobis ab fugiat dignissimos
-                commodi accusamus neque ad facilis excepturi dolores incidunt, placeat, unde dicta autem consectetur ea
-                dolorem itaque.</p>
-            <a href="#" class="button">Learn more</a>
+        <section class="vision img-bg-centered">
+            <div class="section-wrapper">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat nobis ab fugiat dignissimos
+                    commodi accusamus neque ad facilis excepturi dolores incidunt, placeat, unde dicta autem consectetur ea
+                    dolorem itaque.</p>
+                <a href="#" class="button">
+                    Learn more
+                    <span class="material-symbols-outlined">arrow_right</span>
+                </a>
+            </div>
         </section>
         <!-- Team section -->
         <section id="team" class="team">
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <img src="images/john.jpg" alt="John Doe">
-                <div>
-                    <h3>John Doe</h3>
-                    <p class="title">CEO and Co-owner</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio fugit eos quia?
-                        Voluptatem, facere rerum? Unde odio totam quae reiciendis quisquam officia, aperiam quaerat
-                        eaque asperiores corrupti officiis tenetur?</p>
+            <div class="section-wrapper">
+                <h2>Our Team</h2>
+                <div class="team-member card">
+                    <img src="images/john.jpg" alt="John Doe">
+                    <div class="info">
+                        <h3>John Doe</h3>
+                        <p class="title">CEO and Co-owner</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio fugit eos quia?
+                            Voluptatem, facere rerum? Unde odio totam quae reiciendis quisquam officia, aperiam quaerat
+                            eaque asperiores corrupti officiis tenetur?</p>
+                    </div>
                 </div>
-            </div>
-            <div class="team-member">
-                <img src="images/bob.jpg" alt="Bob Rite">
-                <div>
-                    <h3>Bob Rite</h3>
-                    <p class="title">CFO and Co-owner</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, excepturi! Optio laborum quis
-                        quaerat quibusdam molestiae a voluptate voluptatem, est numquam. Harum architecto nam veniam
-                        cupiditate consectetur perspiciatis nemo optio!</p>
+                <div class="team-member card">
+                    <img src="images/bob.jpg" alt="Bob Rite">
+                    <div class="info">
+                        <h3>Bob Rite</h3>
+                        <p class="title">CFO and Co-owner</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, excepturi! Optio laborum quis
+                            quaerat quibusdam molestiae a voluptate voluptatem, est numquam. Harum architecto nam veniam
+                            cupiditate consectetur perspiciatis nemo optio!</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- contact section -->
         <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
-                <!-- contact form -->
-                <div class="contact-item">
-                    <h3>Send us a message</h3>
-                    <form class="contact-form">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="full-name">
+            <div class="section-wrapper">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <!-- contact form -->
+                    <div class="contact-item">
+                        <h3>Send us a message</h3>
+                        <form class="contact-form">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name">
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
 
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                <!-- hours -->
-                <div class="contact-item">
-                    <h3>Hours of operation</h3>
-                    <div class="schedule">
-                        <table class="hours">
-                            <caption>Operating Hours</caption>
-                            <thead>
-                                <tr>
-                                    <th>Days</th>
-                                    <th>Hours</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Monday - Friday</td>
-                                    <td>9 AM - 6 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday - Sunday</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
-                </div>
-                <!-- map -->
-                <div class="contact-item">
-                    <h3>Location</h3>
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9903358182905!2d-75.75805774999999!3d45.34900735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764609882594!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                    <!-- hours -->
+                    <div class="contact-item">
+                        <h3>Hours of operation</h3>
+                        <div class="schedule">
+                            <table class="hours">
+                                <thead>
+                                    <tr>
+                                        <th>Days</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday - Friday</td>
+                                        <td>9 AM - 6 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday - Sunday</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- map -->
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9903358182905!2d-75.75805774999999!3d45.34900735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764609882594!5m2!1sen!2sca"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,11 +279,13 @@
     </main>
     <!-- footer -->
     <footer>
-        <p>© Copyright Three Star Media, 2020</p>
-        <p>
-            All images are taken from
-            <a href="https://unsplash.com">Unsplash</a>
-        </p>
+        <div class="section-wrapper">
+            <p>© Copyright Three Star Media, 2020</p>
+            <p>
+                All images are taken from
+                <a href="https://unsplash.com">Unsplash</a>
+            </p>
+        </div>
     </footer>
 </body>
-</html>
+</html> 
