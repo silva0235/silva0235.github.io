@@ -73,7 +73,7 @@ nav ul {
 
 /* Main banner */
 .background-img-wrapper {
-  background-image: url('/images/main-banner.jpg');
+  background-image: url("../images/main-banner.jpg");
   height: 400px;
   padding-top: 45px;
 }
@@ -101,7 +101,7 @@ nav ul {
   padding: 10px;
 }
 .about-img {
-  background-image: url("/images/about-us.jpg");
+  background-image: url("../images/about-us.jpg");
   height: 320px;
 }
 .card {
@@ -116,7 +116,7 @@ nav ul {
 }
 
 .vision {
-  background-image: url(/images/vision.jpg);
+  background-image: url("../images/vision.jpg");
   height: 250px;
   color: white;
   padding: 30px 10px 5px 10px;
